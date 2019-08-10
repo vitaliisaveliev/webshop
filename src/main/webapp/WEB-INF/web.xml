@@ -1,0 +1,24 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+  <listener>
+    <listener-class>com.epam.web.listener.AppContext</listener-class>
+  </listener>
+
+  <context-param>
+    <param-name>captchaMode</param-name>
+    <param-value>Field</param-value>
+  </context-param>
+  <context-param>
+    <param-name>expirationTime</param-name>
+    <param-value>60</param-value>
+  </context-param>
+</web-app>

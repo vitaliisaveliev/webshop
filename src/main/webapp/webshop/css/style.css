@@ -1,0 +1,17 @@
+.flex-container{
+    display: flex;
+    justify-content: center;
+}
+
+.filter{
+    width: 20%
+}
+
+.content{
+    justify-content: center;
+    width: 50%
+}
+
+.w-18{
+   width: 18%;
+}

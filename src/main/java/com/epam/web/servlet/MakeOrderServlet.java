@@ -45,7 +45,7 @@ public class MakeOrderServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String cardNumber = request.getParameter(PAY_CARD);
-        if (cardNumber != null) {
+        if (!cardNumber.equals("")) {
             User user = (User) request.getSession().getAttribute(USER);
             CardService cardService = (CardService) getServletContext().getAttribute(CARD_SERVICE);
             cardService.addCard(new Card(Integer.parseInt(cardNumber)), user.getId());
